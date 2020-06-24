@@ -1,4 +1,4 @@
-
+#language:pt
 
 Funcionalidade: Acesso 
 
@@ -21,6 +21,6 @@ Funcionalidade: Acesso
 
     Cenario: Conta nao informada
 
-        Dado que " " e minha conta no github
-        Quando entro no gitnder
+        Dado que " " e a minha conta do github
+        Quando eu entro no gitnder
         Entao devo ver a mensagem de alerta: "Conta Github não existe :("
