@@ -6,6 +6,7 @@ Funcionalidade: Acesso
     Sendo usuário que possui uma conta no github
     Quero poder inicar uma nova sessão
 
+    @temp
     Cenario: Nova sessao
 
         Dado que "papitoio" e a minha conta do github

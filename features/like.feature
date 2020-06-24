@@ -1,13 +1,14 @@
-    
-    
-    Funcionalidade: Likes
-        Para que eu possa dar possiveis matches com usuarios que também me curtiram
-        Sendo um usuario que iniciou uma nova sessao
-        Quero curtir usuario
+    #language:pt
+   
+Funcionalidade: Likes
 
-        Cenario: Curtir
+    Para que eu possa dar possiveis matches com usuarios que também me curtiram
+    Sendo um usuario que iniciou uma nova sessao
+    Quero curtir usuario
 
-            Dado que "alefcarlos" possui um perfil cadastrado
-            E eu acesso o Gitnder
-            Quando eu dou like em "alefcarlos"
-            Entao este perfil deve sumir da lista
+    Cenario: Curtir
+
+        Dado que "alefcarlos" possui um perfil cadastrado
+        E eu acesso o Gitnder
+        Quando eu dou like em "alefcarlos"
+        Entao este perfil deve sumir da lista
