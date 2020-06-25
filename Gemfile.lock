@@ -68,6 +68,19 @@ GEM
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     regexp_parser (1.7.1)
+    rspec (3.9.0)
+      rspec-core (~> 3.9.0)
+      rspec-expectations (~> 3.9.0)
+      rspec-mocks (~> 3.9.0)
+    rspec-core (3.9.2)
+      rspec-support (~> 3.9.3)
+    rspec-expectations (3.9.2)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.9.0)
+    rspec-mocks (3.9.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.9.0)
+    rspec-support (3.9.3)
     rubyzip (2.3.0)
     rufo (0.12.0)
     selenium-webdriver (3.142.7)
@@ -90,6 +103,7 @@ DEPENDENCIES
   capybara
   cucumber
   ffi
+  rspec
   rufo
   selenium-webdriver
 

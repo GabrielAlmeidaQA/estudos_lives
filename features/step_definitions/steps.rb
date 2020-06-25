@@ -1,4 +1,4 @@
-Dado("que {string} e a minha conta do github") do |conta|
+Dado("que possuo a conta {string}") do |conta|
   @conta = conta
 end
 
@@ -7,21 +7,16 @@ Dado("possuo os skills {string}") do |skills|
 end
 
 Quando("eu entro no gitnder") do
-  visit "https://gitnder.herokuapp.com"
-  find("#gituser").set @conta
-  find("input[placeholder*=skills]").set @skills
-  click_button "Enviar"
+  login = LoginPage.new
+  login.logar(@conta, @skills)
 end
 
 Entao("devo ver a area logada") do
-  usuario_logado = page.has_css?(".git-users")
-  expect(usuario_logado).to be true
-end
-
-Dado("que {string} nao e uma conta do github") do |conta|
-  pending # Write code here that turns the phrase above into concrete actions
+  users = UsersPage.new
+  expect(users.usuario_logado).to be true
 end
 
 Entao("devo ver a mensagem de alerta: {string}") do |mensagem_esperada|
-  pending # Write code here that turns the phrase above into concrete actions
+  login = LoginPage.new
+  expect(login.alert).to eql mensagem_esperada
 end
